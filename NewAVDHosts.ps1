@@ -100,7 +100,7 @@ Add-Content -LiteralPath C:\New-AVDSessionHost.log "Downloading AVD Agent"
 ##############################
 #    Prep for AVD Install    #
 ##############################
-
+cd $LocalWVDpath 
 ##############################
 #    OS Specific Settings    #
 ##############################
