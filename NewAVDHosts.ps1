@@ -100,7 +100,7 @@ Add-Content -LiteralPath C:\New-AVDSessionHost.log "Downloading AVD Agent"
 ##############################
 #    Prep for AVD Install    #
 ##############################
-cd $LocalWVDpath 
+cd $LocalAVDpath 
 ##############################
 #    OS Specific Settings    #
 ##############################
@@ -166,7 +166,7 @@ $agent_deploy_status = Start-Process `
         "/qn", `
         "/norestart", `
         "/passive", `
-        "REGISTRATIONTOKEN='$RegistrationToken'", "/l* $LocalAVDpath\AgentInstall.txt" `
+        "REGISTRATIONTOKEN=$RegistrationToken", "/l* $LocalAVDpath\AgentInstall.txt" `
     -Wait `
     -Passthru
 Add-Content -LiteralPath C:\New-AVDSessionHost.log "AVD Agent Install Complete"
