@@ -43,8 +43,8 @@ Param (
 $LocalAVDpath            = "c:\temp\AVD\"
 $AVDBootURI              = 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH'
 $AVDAgentURI             = 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv'
-$AVDAgentInstaller       = 'AVD-Agent.msi'
-$AVDBootInstaller        = 'AVD-Bootloader.msi'
+$AVDAgentInstaller       = 'WVD-Agent.msi'
+$AVDBootInstaller        = 'WVD-Bootloader.msi'
 
 
 ####################################
@@ -142,6 +142,7 @@ Else {
 ################################
 #    Install AVD Componants    #
 ################################
+cd $LocalAVDpath 
 Add-Content -LiteralPath C:\New-AVDSessionHost.log "Installing AVD Bootloader"
 $bootloader_deploy_status = Start-Process `
     -FilePath "msiexec.exe" `
