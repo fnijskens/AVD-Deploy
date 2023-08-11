@@ -33,11 +33,7 @@
 ##############################
 Param (        
     [Parameter(Mandatory=$true)]
-        [string]$ProfilePath,
-    [Parameter(Mandatory=$true)]
-        [string]$RegistrationToken,
-    [Parameter(Mandatory=$false)]
-        [string]$Optimize = $true           
+        [string]$RegistrationToken          
 )
 
 
@@ -88,9 +84,7 @@ New-Item -Path c:\ -Name New-AVDSessionHost.log -ItemType File
 Add-Content `
 -LiteralPath C:\New-AVDSessionHost.log `
 "
-ProfilePath       = $ProfilePath
 RegistrationToken = $RegistrationToken
-Optimize          = $Optimize
 "
 
 
