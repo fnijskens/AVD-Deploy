@@ -154,10 +154,10 @@ $agent_deploy_status = Start-Process `
         "REGISTRATIONTOKEN=$RegistrationToken", "/l* $LocalAVDpath\AgentInstall.txt" `
     -Wait `
     -Passthru
+$sts = $agent_deploy_status.ExitCode
 Add-Content -LiteralPath C:\New-AVDSessionHost.log "AVD Agent Install Complete"
+Write-Output "Installing RD Infra Agent on VM Complete. Exit code=$sts`n"
 Wait-Event -Timeout 5
-
-
 
 ##########################################
 #    Enable Screen Capture Protection    #
