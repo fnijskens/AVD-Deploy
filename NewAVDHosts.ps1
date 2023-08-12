@@ -209,5 +209,7 @@ Pop-Location
 ##########################
 #    Restart Computer    #
 ##########################
-Add-Content -LiteralPath C:\New-AVDSessionHost.log "Process Complete - REBOOT"
-Restart-Computer -Force 
+#Add-Content -LiteralPath C:\New-AVDSessionHost.log "Process Complete - REBOOT"
+#Restart-Computer -Force 
+
+Add-Content -LiteralPath C:\New-AVDSessionHost.log "Process Complete - completed"
