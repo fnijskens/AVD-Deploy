@@ -6,22 +6,6 @@
 # Date                         Version      Changes
 #------------------------------------------------------------------------
 # 09/15/2019                     1.0        Intial Version
-# 09/16/2019                     2.0        Add FSLogix installer
-# 09/16/2019                     2.1        Add FSLogix Reg Keys 
-# 09/16/2019                     2.2        Add Input Parameters 
-# 09/16/2019                     2.3        Add TLS 1.2 settings
-# 09/17/2019                     3.0        Chang download locations to dynamic
-# 09/17/2019                     3.1        Add code to disable IESEC for admins
-# 09/20/2019                     3.2        Add code to discover OS (Server / Client)
-# 09/20/2019                     4.0        Add code for servers to add RDS Host role
-# 10/01/2019                     4.2        Add all FSLogix Profile Container Reg entries for easier management
-# 10/07/2019                     4.3        Add FSLogix Office Container Reg entries for easier management
-# 10/16/2019                     5.0        Add Windows 7 Support
-# 07/20/2020                     6.0        Add AVD Optimize Code from The-Virtual-Desktop-Team
-# 10/27/2020                     7.0        Optimize FSLogix settings - Remove Office Profile Settings
-# 02/01/2021                     7.1        Add RegKey for Screen Protection
-# 05/22/2021                     7.2        Multiple changes to AVD Optimization code (remove winversion, Add EULA, Add Paramater for Optimize All
-# 06/30/2021                     7.3        Add RegKey for Azure AD Join
 #
 #*********************************************************************************
 #
